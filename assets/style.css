@@ -1,0 +1,122 @@
+/* Latar belakang */
+body {
+    background: url('https://i.pinimg.com/736x/d5/aa/19/d5aa19ca134b0d79ab4e9130da7df75e.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
+    color: #333; /* Warna teks yang kontras */
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #333333 !important;
+    margin-right: 15px;
+}
+
+.btn-outline-primary {
+    border-color: #000000;
+    color: #000000;
+}
+
+.btn-outline-primary:hover {
+    background-color: #646464;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 0.9rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur jarak antara ikon dan jumlah */
+.like-count,
+.comment-count {
+    margin-left: 8px;
+    margin-right: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card-footer a {
+    color: #ff6b6b; /* Warna ikon like */
+}
+
+.card-footer a:hover {
+    color: #ff4d4d;
+}
+
+/* Album Button Styling */
+.album-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Jarak antar tombol album */
+    justify-content: center; /* Menempatkan tombol di tengah */
+    margin-top: 20px; /* Memberikan jarak atas */
+}
+
+/* Styling Heading Album */
+.album-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333; /* Warna teks heading */
+}
+
+/* Tombol Album */
+.album-btn {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem; /* Ukuran font lebih besar */
+    padding: 20px 30px; /* Menambah padding untuk kotak album lebih besar */
+    text-transform: uppercase; /* Membuat teks jadi lebih tegas */
+    border-radius: 8px; /* Menambahkan sudut melengkung */
+    transition: all 0.3s ease; /* Animasi saat tombol dihover */
+    background-color: #6c757d; /* Warna secondary pada tombol */
+    color: white; /* Teks berwarna putih */
+    border: 1px solid #6c757d; /* Border sesuai dengan warna secondary */
+}
+
+.album-btn:hover {
+    background-color: #5a6268; /* Warna secondary yang lebih gelap saat hover */
+    color: #fff; /* Tetap warna teks putih */
+    transform: scale(1.05); /* Menambah sedikit efek pembesaran saat hover */
+}
+
+.album-btn:focus, .album-btn:active {
+    background-color: #6c757d; /* Warna tetap secondary saat tombol ditekan */
+    border-color: #5a6268; /* Border lebih gelap saat tombol ditekan */
+}
+
+/* Ukuran tombol untuk versi desktop */
+@media (min-width: 768px) {
+    .album-btn {
+        font-size: 1.5rem; /* Ukuran font lebih besar pada desktop */
+        padding: 25px 40px; /* Padding lebih besar pada desktop */
+    }
+}
+
+/* Ukuran tombol untuk versi mobile */
+@media (max-width: 767px) {
+    .album-btn {
+        font-size: 1.2rem; /* Ukuran font lebih kecil pada mobile */
+        padding: 15px 20px; /* Padding lebih kecil pada mobile */
+    }
+}
